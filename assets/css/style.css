@@ -84,13 +84,24 @@ p{
         transform: translateY(0px);
     }
 }
-
+@keyframes animation-1{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 /* ---------------------navbar css ------------------------- */
 .navbar-area {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 9;
 }
 
 .navbar {
@@ -142,6 +153,70 @@ p{
     height: 800px;
     background-position: bottom center;
 }
+.header-hero .shape{
+    position: absolute;
+}
+.header-hero .shape.shape-1{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    left: 130px;
+    top: 20%;
+    border-radius: 50%;
+    background: #637ae4;
+    animation: animation-1 2s linear infinite;
+}
+.header-hero .shape.shape-2{
+    
+    width: 39px;
+    height: 39px;
+    left: 150px;
+    bottom: 40px;
+    border-radius: 50%;
+    background: #0898e7;
+    animation: animation-1 2s linear infinite;
+}
+.header-hero .shape.shape-3{
+    
+    width: 19px;
+    height: 19px;
+    left: 26px;
+    bottom: 25%;
+    border-radius: 50%;
+    background: #ff846f;
+    animation: animation-1 2s linear infinite;
+}
+.header-hero .shape.shape-4{
+    
+    width: 39px;
+    height: 39px;
+    left: 40%;
+    top: 175%;
+    border-radius: 50%;
+    background: #4edaf5;
+    animation: animation-1 2s linear infinite;
+}
+.header-hero .shape.shape-5{
+    
+    width: 19px;
+    height: 19px;
+    left: 19px;
+    left: 50%;
+    border-radius: 50%;
+    background: #ff5b56;
+    animation: animation-1 2s linear infinite;
+}
+.header-hero .shape.shape-6{
+    
+    width: 14px;
+    height: 14px;
+    left: 45%;
+    bottom: 70%;
+    border-radius: 50%;
+    background: #4edaf5;
+    animation: animation-1 2s linear infinite;
+}
+
 .header-hero-content{
     position: relative;
 }
@@ -206,4 +281,10 @@ p{
     top: 0;
     right: 0;
     z-index: -1;
+}
+.vbox-close{
+    color: #fff;
+    background: transparent;
+    font-size: 40px;
+    right: 12%;
 }
