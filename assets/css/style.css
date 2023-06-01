@@ -191,7 +191,7 @@ p{
     width: 39px;
     height: 39px;
     left: 40%;
-    top: 175%;
+    top: 80%;
     border-radius: 50%;
     background: #4edaf5;
     animation: animation-1 2s linear infinite;
@@ -261,7 +261,7 @@ p{
 .header-image{
     position: relative;
     padding-top: 80px;
-    animation: bounceTop-1 3s ease infinite;
+   animation: bounceTop-1 3s ease infinite;
 }
 .header-shape-1{
     position: absolute;
