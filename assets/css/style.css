@@ -23,31 +23,40 @@ ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-   
+
 }
 
 a {
     text-decoration: none !important;
     display: inline-block;
 }
-h1{
+
+h1,
+h3 {
     font-family: 'poppins', sans-serif;
     font-weight: 700;
-    color:#38424d
+    color: #38424d
 }
-span{
+
+h3 {
+    font-size: 28px;
+}
+
+span {
     display: contents;
     color: #fe5f59;
 }
-p{
+
+p {
     font-size: 16px;
-    font-weight:400;
+    font-weight: 400;
     line-height: 24px;
     color: #747e74;
     margin: 0;
 }
+
 /* ---------------------- all button css ------- */
-.main-btn{
+.main-btn {
     display: inline-block;
     padding: 0 25px;
     font-size: 16px;
@@ -59,42 +68,52 @@ p{
     background-color: #0898ef;
     color: #fff;
 }
-.main-btn:hover{
+
+.main-btn:hover {
     background-color: rgba(8, 152, 231, .7);
     color: white;
     border-color: transparent;
 }
 
 /* -------------- all animation ----------- */
-@keyframes video{
-    0%{
+@keyframes video {
+    0% {
         transform: scale(1);
         opacity: 1;
     }
-    100%{
+
+    100% {
         transform: scale(1.4);
         opacity: 0;
     }
 }
-@keyframes bounceTop-1{
-    0%,100%{
+
+@keyframes bounceTop-1 {
+
+    0%,
+    100% {
         transform: translateY(-30px);
     }
-    50%{
+
+    50% {
         transform: translateY(0px);
     }
 }
-@keyframes animation-1{
-    0%{
+
+@keyframes animation-1 {
+    0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(1.2);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
+
 /* ---------------------navbar css ------------------------- */
 .navbar-area {
     position: absolute;
@@ -125,7 +144,8 @@ p{
     font-weight: 400;
     color: #38424d;
 }
-.navbar-nav .nav-item .nav-link::before{
+
+.navbar-nav .nav-item .nav-link::before {
     content: '';
     position: absolute;
     width: 8px;
@@ -137,26 +157,30 @@ p{
     opacity: 0;
     transition: all .3 ease-out 0s;
 }
+
 .navbar-nav .nav-item .nav-link.active,
-.navbar-nav .nav-item .nav-link:hover{
+.navbar-nav .nav-item .nav-link:hover {
     color: #ff846f !important;
 }
+
 .navbar-nav .nav-item .nav-link.active::before,
-.navbar-nav .nav-item .nav-link:hover::before{
+.navbar-nav .nav-item .nav-link:hover::before {
     opacity: 1;
 }
 
 /* ------------------ home css --------------------- */
-.header-hero{
+.header-hero {
     position: relative;
     top: 0;
     height: 800px;
     background-position: bottom center;
 }
-.header-hero .shape{
+
+.header-hero .shape {
     position: absolute;
 }
-.header-hero .shape.shape-1{
+
+.header-hero .shape.shape-1 {
     position: relative;
     width: 75px;
     height: 75px;
@@ -166,8 +190,9 @@ p{
     background: #637ae4;
     animation: animation-1 2s linear infinite;
 }
-.header-hero .shape.shape-2{
-    
+
+.header-hero .shape.shape-2 {
+
     width: 39px;
     height: 39px;
     left: 150px;
@@ -176,8 +201,9 @@ p{
     background: #0898e7;
     animation: animation-1 2s linear infinite;
 }
-.header-hero .shape.shape-3{
-    
+
+.header-hero .shape.shape-3 {
+
     width: 19px;
     height: 19px;
     left: 26px;
@@ -186,8 +212,9 @@ p{
     background: #ff846f;
     animation: animation-1 2s linear infinite;
 }
-.header-hero .shape.shape-4{
-    
+
+.header-hero .shape.shape-4 {
+
     width: 39px;
     height: 39px;
     left: 40%;
@@ -196,8 +223,9 @@ p{
     background: #4edaf5;
     animation: animation-1 2s linear infinite;
 }
-.header-hero .shape.shape-5{
-    
+
+.header-hero .shape.shape-5 {
+
     width: 19px;
     height: 19px;
     left: 19px;
@@ -206,8 +234,9 @@ p{
     background: #ff5b56;
     animation: animation-1 2s linear infinite;
 }
-.header-hero .shape.shape-6{
-    
+
+.header-hero .shape.shape-6 {
+
     width: 14px;
     height: 14px;
     left: 45%;
@@ -217,24 +246,28 @@ p{
     animation: animation-1 2s linear infinite;
 }
 
-.header-hero-content{
+.header-hero-content {
     position: relative;
 }
-.header-hero-content .header-title{
-    font-size:42px;
+
+.header-hero-content .header-title {
+    font-size: 42px;
     color: #38424d;
 }
-.header-hero-content .text{
+
+.header-hero-content .text {
     margin-top: 30px;
 }
-.header-hero-content ul{
+
+.header-hero-content ul {
     margin-top: 30px;
 }
-.header-hero-content ul li .header-video{
+
+.header-hero-content ul li .header-video {
     margin-left: 50px;
 }
 
-.header-hero-content .header-video{
+.header-hero-content .header-video {
     position: relative;
     margin-top: 6px;
     width: 50px;
@@ -246,7 +279,8 @@ p{
     background-color: #0896ef;
     color: #fff;
 }
-.header-hero-content .header-video::before{
+
+.header-hero-content .header-video::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -258,12 +292,14 @@ p{
     z-index: -9;
     animation: video 2s linear infinite;
 }
-.header-image{
+
+.header-image {
     position: relative;
     padding-top: 80px;
-   animation: bounceTop-1 3s ease infinite;
+    animation: bounceTop-1 3s ease infinite;
 }
-.header-shape-1{
+
+.header-shape-1 {
     position: absolute;
     top: 0;
     right: 0;
@@ -276,15 +312,119 @@ p{
     z-index: -1;
 
 }
-.header-shape-2{
+
+.header-shape-2 {
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
 }
-.vbox-close{
+
+.vbox-close {
     color: #fff;
     background: transparent;
     font-size: 40px;
     right: 12%;
+}
+
+/* ----------- feature section -------------- */
+.feature-section .sigle-feature {
+    padding: 30px;
+    text-align: center !important;
+    box-shadow: 0 15px 17px 0 rgb(154 154 154 /16%);
+}
+
+.feature-section .sigle-feature .icon {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 30px;
+    background-color: #487cff;
+    color: #fff;
+    font-size: 40px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.feature-section .sigle-feature .icon.color-2 {
+    background-color: #ffb260;
+}
+
+.feature-section .sigle-feature .icon.color-3 {
+    background-color: #ff92a5;
+}
+
+.feature-section .sigle-feature .icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: inherit;
+    top: -8px;
+    right: -8px;
+    z-index: -1;
+    opacity: .2;
+    transition: all .3s ease-out 0s;
+}
+
+.feature-section .sigle-feature .content h3 {
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.feature-section .sigle-feature:hover .icon::after{
+    top: 8px;
+    right: 8px;
+}
+
+/* ----------------- about css ---------------- */
+.about-area{
+    overflow: hidden;
+}
+.about-image{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-left:30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about-image .about-shape::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 2px solid #0898e7;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transform: scale(1.1) rotate(25deg);
+}
+.about-image .about-shape{
+    position: relative;
+    width: 390px;
+    height: 390px;
+    background-color: #0898e7;
+    border-radius: 50%;
+}
+.about-image .app{
+    max-width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 95;
+    transform: rotate(-25deg) translate(-15%);
+}
+.title{
+    font-size: 35px;
+    font-weight: 600;
+}
+.text{
+    margin-top: 20px;
+}
+.about-content .main-btn{
+    margin-top: 40px;
 }
